@@ -16,7 +16,9 @@ void  read_file(const int fd, char* buff);
 void  read_sequence(char* buff);
 
 // uint32_t reduce(uint32_t x, uint32_t N) ;
-int mod(int num, int divisor) ;
+// int mod(int num, int divisor);
+unsigned int mod3( unsigned int a );
+unsigned int mod5( unsigned int a );
 
 int main(int argc, char** argv)
 {
@@ -93,10 +95,39 @@ uint32_t reduce(uint32_t x, uint32_t N) {
 */
 
 // num % divisor
-int mod(int num, int divisor) 
+
+/*int mod(int num, int divisor) 
 { 
     return (num - divisor * (num / divisor)); 
-} 
+} */
+
+unsigned int mod3( unsigned int a ) {
+    while (a > 5) {
+        int s = 0; /* accumulator for the sum of the digits */
+        while (a != 0) {
+            s = s + (a & 3);
+            a = a >> 2;
+        }
+        a = s;
+    }
+    /* note, at this point: a < 6 */
+    if (a > 2) a = a - 3;
+    return a;
+}
+
+unsigned int mod5( unsigned int a ) {
+    while (a > 9) {
+        int s = 0; /* accumulator for the sum of the digits */
+        while (a != 0) {
+            s = s + (a & 7);
+            a = (a >> 3) * 3;
+        }
+        a = s;
+    }
+    /* note, at this point: a < 10 */
+    if (a > 4) a = a - 5;
+    return a;
+}
 
 void  read_sequence(char* buff)
 {
@@ -107,13 +138,13 @@ void  read_sequence(char* buff)
 	while(stream >> n)
 	{
 		n = abs(n);
-		if(mod(n, 3) == 0 && mod(n, 5) == 0){
+		if(mod3(n) == 0 && mod5(n) == 0){
      		std::cout << "FizzBuzz\n";
     	}
-    	else if(mod(n, 3) == 0){
+    	else if(mod3(n) == 0){
       		std::cout << "Fizz\n";
     	}
-    	else if(mod(n, 5) == 0){
+    	else if( mod5(n) == 0){
       		std::cout << "Buzz\n";
     	}
     	else{
