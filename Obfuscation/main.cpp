@@ -42,7 +42,6 @@ void search(int a, int b)
         {  
             cout << "Binary search: position = " <<  s << endl;  
             s += (s + m < n)? m-bad[txt[s + m]] : 1;  
-  
         }  
   
         else

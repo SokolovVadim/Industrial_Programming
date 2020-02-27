@@ -1,5 +1,5 @@
 all:
-	g++ fizzbuzz.cpp -o run
+	g++ solution.cpp -o run
 valgrind: run
 	valgrind --leak-check=yes ./run
 clean:
