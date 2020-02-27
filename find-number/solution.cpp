@@ -34,6 +34,10 @@ int main(int argc, char** argv)
 	delete[] array;
 }
 
+/*! \brief convert arg from str to long int
+ *   returns read number
+ *  \param str argument of command line to be parsed      
+ */
 
 long int read_args(char * str)
 {
@@ -62,11 +66,23 @@ long int read_args(char * str)
     return number;
 }
 
+/*! \brief read array from CL
+ *  \param array
+ *  \param n array size 
+ */
+
 void input_array(long* array, long n)
 {
 	for(int i(0); i < n; ++i)
 		std::cin >> array[i];
 }
+
+/*! \brief prints array of missing numbers in cycle
+ *         without storing it into array
+ *  \param array
+ *  \param m max number
+ *  \param n array size 
+ */
 
 void print_array_of_missing_numbers(long* array, long m, long n)
 {
