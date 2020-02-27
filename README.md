@@ -13,4 +13,8 @@ If N % 15 == 0 then fizzbuzz
 ##### Input: 
 N numbers
 ##### Output: 
-fizz buzz sequence
+fizz buzz sequence  
+
+## Build
+- chmod +x build.sh  
+- /bin/bash build.sh
