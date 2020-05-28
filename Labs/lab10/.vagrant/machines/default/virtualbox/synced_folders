@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/home/vadim/3rdCourse/6thTerm/IndustrialProgr/lab10/lab10/shared","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}

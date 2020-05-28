@@ -1,0 +1,23 @@
+language: cpp
+
+script:
+- cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install -DBUILD_TESTS=ON
+- cmake --build _build
+- cmake --build _build --target install
+- cmake --build _build --target test -- ARGS=--verbose
+
+addons:
+  apt:
+    sources:
+      - george-edison55-precise-backports
+    packages:
+      - cmake
+      - cmake-data
+
+deploy:
+  provider: releases
+  api_key: CC2778B379C074D4AD48E35FEAB1E228CA92FEEC
+  file: README.md
+  skip_cleanup: true
+  on:
+    tags: true
