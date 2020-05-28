@@ -1,0 +1,10 @@
+/home/vadim/3rdCourse/6thTerm/IndustrialProgr/Logger/CMakeFiles/install/local.dir
+/home/vadim/3rdCourse/6thTerm/IndustrialProgr/Logger/CMakeFiles/install.dir
+/home/vadim/3rdCourse/6thTerm/IndustrialProgr/Logger/CMakeFiles/list_install_components.dir
+/home/vadim/3rdCourse/6thTerm/IndustrialProgr/Logger/CMakeFiles/install/strip.dir
+/home/vadim/3rdCourse/6thTerm/IndustrialProgr/Logger/CMakeFiles/logger.dir
+/home/vadim/3rdCourse/6thTerm/IndustrialProgr/Logger/CMakeFiles/rebuild_cache.dir
+/home/vadim/3rdCourse/6thTerm/IndustrialProgr/Logger/CMakeFiles/main.dir
+/home/vadim/3rdCourse/6thTerm/IndustrialProgr/Logger/CMakeFiles/edit_cache.dir
+/home/vadim/3rdCourse/6thTerm/IndustrialProgr/Logger/CMakeFiles/demo.dir
+/home/vadim/3rdCourse/6thTerm/IndustrialProgr/Logger/CMakeFiles/package_source.dir
